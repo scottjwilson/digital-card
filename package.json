@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "autoprefixer": "^10.3.1",
     "gatsby": "^3.11.1",
     "gatsby-plugin-google-analytics": "^3.11.0",
     "gatsby-plugin-image": "^1.11.0",
@@ -27,6 +28,13 @@
     "gatsby-transformer-sharp": "^3.11.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "gatsby-plugin-emotion": "^6.11.0",
+    "twin.macro": "^2.6.2"
   }
 }
