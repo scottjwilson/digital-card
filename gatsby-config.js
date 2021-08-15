@@ -8,13 +8,6 @@ module.exports = {
     title: "digital-card",
   },
   plugins: [
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        accessToken: process.env.CONTENTFUL_ACCESS,
-        spaceId: process.env.CONTENTFUL_SPACE,
-      },
-    },
     "gatsby-plugin-image",
     "gatsby-plugin-emotion",
     {
