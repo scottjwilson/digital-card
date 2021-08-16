@@ -17,6 +17,7 @@
   "dependencies": {
     "autoprefixer": "^10.3.1",
     "gatsby": "^3.11.1",
+    "gatsby-background-image": "^1.5.3",
     "gatsby-plugin-google-analytics": "^3.11.0",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-manifest": "^3.11.0",
@@ -25,7 +26,10 @@
     "gatsby-plugin-sitemap": "^4.7.0",
     "gatsby-source-contentful": "^5.11.1",
     "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-source-strapi": "^1.0.2",
     "gatsby-transformer-sharp": "^3.11.0",
+    "gbimage-bridge": "^0.1.4",
+    "graphql": "^15.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",

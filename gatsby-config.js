@@ -11,6 +11,15 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-emotion",
     {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: process.env.STRAPI_URL,
+        queryLimit: 1000, // Defaults to 100
+
+        singleTypes: [`profile`],
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: process.env.GOOGLE_PROPERTY,
