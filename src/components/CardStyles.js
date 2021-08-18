@@ -10,7 +10,7 @@ const Profile = styled.div`
   ${tw`w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0`}
 `;
 
-const ColumnLeft = styled.div`
+const Column = styled.div`
   ${tw`p-4 md:p-12 text-center lg:text-left`}
 `;
 
@@ -44,20 +44,25 @@ const LinkWrapper = styled.div`
   ${tw` p-2 flex flex-col md:space-y-3 space-y-2 py-4`}
 `;
 const Lin = styled.a`
-  ${tw`bg-green-700 hover:bg-green-600  text-white font-bold py-2 px-4 rounded-full text-center hover:shadow-2xl transform motion-safe:hover:scale-110 transition-all duration-200`}
+  ${tw`bg-green-700 hover:bg-green-600 text-sm text-white font-bold py-2 px-4 rounded-full text-center hover:shadow-2xl transform motion-safe:hover:scale-110 transition-all duration-200`}
 `;
 
 const BigImage = styled(GatsbyImage)`
   ${tw`rounded-none lg:rounded-lg shadow-2xl hidden lg:block`}
 `;
 const SmallImage = styled(GatsbyImage)`
-  ${tw`block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center`}
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0)
+    ${tw`block rounded-full lg:hidden shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center`};
 `;
 
 export {
   Wrapper,
   Profile,
-  ColumnLeft,
+  Column,
   ProImageWrapper,
   Title,
   Bar,

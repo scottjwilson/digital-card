@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import {
   Wrapper,
   Profile,
-  ColumnLeft,
+  Column,
   ProImageWrapper,
   Title,
   Bar,
@@ -49,8 +49,8 @@ export default function IndexPage({ data }) {
       <BackgroundPic>
         <Wrapper>
           <Profile>
-            <ColumnLeft>
-              <div>
+            <Column>
+              <div className="rounded-full">
                 <SmallImage image={getImage(profilePic)} alt={name} />
               </div>
               <Title>{name}</Title>
@@ -146,7 +146,7 @@ export default function IndexPage({ data }) {
                   </svg>
                 </a>
               </SocialWrapper>
-            </ColumnLeft>
+            </Column>
           </Profile>
 
           <div tw="w-full lg:w-2/5">
